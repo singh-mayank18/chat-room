@@ -29,7 +29,7 @@ export const Chat = ({ room }) => {
         messages.push({ ...doc.data(), id: doc.id });
       });
       console.log(messages);
-      //setMessages(messages);
+      setMessages(messages);
     });
 
     return () => unsuscribe();
